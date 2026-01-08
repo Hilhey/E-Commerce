@@ -1,23 +1,26 @@
 # Bisnis Digital Store
 
-Website e-commerce sederhana berbasis PHP + MySQL untuk produk digital. Desain modern dengan fitur pencarian dan keranjang belanja menggunakan JavaScript.
+Website e-commerce sederhana berbasis PHP + MySQL untuk produk digital. Halaman utama menggunakan HTML dengan data produk dimuat via JavaScript dari API PHP.
 
 ## Struktur Folder
 
 ```
 .
+├── api
+│   ├── product.php           # API detail produk (JSON)
+│   └── products.php          # API daftar produk (JSON)
 ├── assets
 │   ├── css
-│   │   └── style.css         # Styling utama tampilan
+│   │   └── style.css          # Styling utama tampilan
 │   └── js
-│       └── app.js            # Interaksi UI (search, cart)
+│       └── app.js             # Interaksi UI (search, cart, fetch API)
 ├── config
-│   └── db.php                # Konfigurasi koneksi database MySQL
+│   └── db.php                 # Konfigurasi koneksi database MySQL
 ├── database
-│   └── schema.sql            # Struktur tabel dan data contoh
-├── index.php                 # Halaman utama daftar produk
-├── product.php               # Halaman detail produk
-└── README.md                 # Dokumentasi proyek
+│   └── schema.sql             # Struktur tabel dan data contoh
+├── index.html                 # Halaman utama daftar produk
+├── product.html               # Halaman detail produk
+└── README.md                  # Dokumentasi proyek
 ```
 
 ## Cara Menjalankan
@@ -31,7 +34,7 @@ Website e-commerce sederhana berbasis PHP + MySQL untuk produk digital. Desain m
 php -S localhost:8000
 ```
 
-Buka `http://localhost:8000` di browser.
+Buka `http://localhost:8000/index.html` di browser.
 
 ## Catatan
 
