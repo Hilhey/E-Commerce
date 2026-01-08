@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bisnis Digital Store</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo">Bisnis<span>Digital</span></div>
+            <div class="nav-actions">
+                <input type="text" id="searchInput" placeholder="Cari produk...">
+                <button class="cart-btn" id="cartToggle">Keranjang <span id="cartCount">0</span></button>
+            </div>
+        </nav>
+        <div class="hero-content">
+            <h1>Platform E-Commerce Produk Digital</h1>
+            <p>Temukan template, kursus, dan tools digital terbaik untuk bisnis Anda.</p>
+            <button class="primary-btn">Mulai Belanja</button>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="section-header">
+            <h2>Produk Unggulan</h2>
+            <p>Update koleksi terbaru dari kreator pilihan.</p>
+        </div>
+        <div class="notice" id="dbNotice" hidden></div>
+        <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="section highlight">
+        <div class="highlight-content">
+            <h2>Siap menaikkan omzet?</h2>
+            <p>Dapatkan insight, template, dan strategi marketing dengan sekali klik.</p>
+            <button class="primary-btn">Langganan Newsletter</button>
+        </div>
+        <div class="highlight-card">
+            <h3>Kenapa memilih kami?</h3>
+            <ul>
+                <li>Produk digital berkualitas dan terkurasi</li>
+                <li>Akses instan setelah pembelian</li>
+                <li>Dukungan komunitas kreator</li>
+            </ul>
+        </div>
+    </section>
+
+    <aside class="cart-panel" id="cartPanel">
+        <div class="cart-header">
+            <h3>Keranjang Belanja</h3>
+            <button id="closeCart">Tutup</button>
+        </div>
+        <div class="cart-body" id="cartItems"></div>
+        <div class="cart-footer">
+            <div class="total">Total: <span id="cartTotal">Rp 0</span></div>
+            <button class="primary-btn" id="checkoutBtn">Checkout</button>
+        </div>
+    </aside>
+
+    <footer class="footer">
+        <div>
+            <h4>Bisnis Digital Store</h4>
+            <p>Solusi e-commerce modern untuk produk digital.</p>
+        </div>
+        <div>
+            <h4>Kontak</h4>
+            <p>Email: hello@bisnisdigital.id</p>
+            <p>Instagram: @bisnisdigital</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
